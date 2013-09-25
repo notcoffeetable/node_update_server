@@ -22,7 +22,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var app = express();  
 
 var users = [
-	{id: 1, username: 'dean', password:'Augustine7', email: 'dean.bisogno@gmail.com'}
+	{id: 1, username: 'bob', password:'secret', email: 'email@example.org'}
 ];
 
 function findById(id, fn) {
