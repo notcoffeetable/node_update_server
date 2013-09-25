@@ -1,0 +1,18 @@
+{
+  "name": "node_update_server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "jade": "*",
+    "stylus": "*",
+    "passport": "~0.1.17",
+    "connect-flash": "~0.1.1",
+    "passport-local": "~0.1.6",
+    "hiredis": "~0.1.15",
+    "redis": "~0.8.4"
+  }
+}

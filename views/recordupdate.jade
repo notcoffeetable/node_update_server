@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Publish New Version
+  form(method='post')
+    div
+      div
+        span Version Number :
+        input(type='text', name='version', id='editVersion')
+      div
+        span Url :
+        input(type='text', name='url', id='editUrl')
+      div
+        span Required :
+        input(type='checkbox', checked, name='required', id='editRequired')
+      div
+        input(type='submit')

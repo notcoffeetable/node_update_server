@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Login
+  if message
+    p#error= message
+  form(method='post')
+    div
+      div
+        span Username :
+        input(type='text', name='username', id='editUsername')
+      div
+        span Password :
+        input(type='text', name='password', id='editPassword')
+      div
+        input(type='submit')
