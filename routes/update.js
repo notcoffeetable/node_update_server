@@ -15,7 +15,7 @@ client.on("error", function (err) {
 });
 
 exports.check = function(req, res){
-	client.hgetall("WinLinkVersion", function(err, result) {
+	client.hgetall("LatestVersion", function(err, result) {
 		if (err) {
 			console.log("Error: " + err);
 			res.end("Error");
@@ -38,7 +38,7 @@ exports.recordform = function(req, res) {
 */
 exports.recordtoredis = function(req, res) {
 	client.hmset(
-		["WinLinkVersion",
+		["LatestVersion",
 		 "version", req.body.version,
 		 "url", req.body.url,
 		 "required", (req.body.required == "on") ? true : false ], redis.print);
